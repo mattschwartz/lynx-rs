@@ -1,0 +1,6 @@
+In addition to having Rust installed on your machine, you must install the bundler for Yew.rs, called Trunk, and the target for WebAssembly:
+
+$ rustup target add wasm32-unknown-unknown
+and:
+
+$ cargo install trunk
