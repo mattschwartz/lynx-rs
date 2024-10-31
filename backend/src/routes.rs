@@ -1,6 +1,6 @@
+use crate::handlers::profile;
 use axum::{routing::post, Extension, Router};
 use sqlx::PgPool;
-use crate::handlers::{profile};
 
 pub fn create_routes(db_pool: PgPool) -> Router {
     Router::new()
