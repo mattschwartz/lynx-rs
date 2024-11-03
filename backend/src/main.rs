@@ -13,7 +13,7 @@ async fn main() {
 
     let app = routes::create_routes(db_pool);
 
-    let addr = SocketAddr::from(([127, 0, 0, 1], 3000));
+    let addr = SocketAddr::from(([127, 0, 0, 1], 8080));
     println!("Backend server listening on {}", addr);
 
     let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
